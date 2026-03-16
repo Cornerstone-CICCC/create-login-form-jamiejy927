@@ -4,8 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
+    
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main class="container">
+
+      <section class="login">
+
+        <img src="./images/logo.svg" alt="logo" class="logo">
+
+        <h1><img src="./images/log-in.svg" alt="">Login</h1>
+        <p>Insert your information below</p>
+
+        <form>
+
+          <label for="email">E-mail</label>
+
+          <div class="input-box">
+            <img src="./images/mail.svg" alt="">
+            <input
+              type="email"
+              id="email"
+              placeholder="Type your email"
+              required
+            >
+          </div>
+
+
+          <label for="password">Password</label>
+
+          <div class="input-box">
+            <img src="./images/lock.svg" alt="">
+            <input
+              type="password"
+              id="password"
+              placeholder="Type your password"
+              required
+              pattern=".{6,}"
+              title="Minimum 6 characters"
+            >
+            <img src="./images/eye.svg" alt="">
+          </div>
+
+
+          <div class="options">
+
+            <label class="remember">
+              <input type="checkbox">
+              Remind me
+            </label>
+
+            <a href="#">Forgot my password</a>
+
+          </div>
+
+
+          <button type="submit">LOGIN</button>
+
+        </form>
+
+        <p class="signup">
+          Don't have an account? <a href="#">Sign up!</a>
+        </p>
+
+      </section>
+
+
+      <section class="image">
+        <img src="./images/side-image.jpg" alt="camp">
+      </section>
+
+    </main>
+  </body>
 </html>
